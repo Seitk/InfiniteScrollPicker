@@ -3,8 +3,8 @@ InfiniteScrollPicker
 
 InfiniteScrollPicker is a subclass of UIScrollView and providing infinite scrolling and size scaling for central items (refer to screenshot). This is a control that I wrote for Emodex (https://itunes.apple.com/app/emodex/id598162115?mt=8) and now I refactorred the code and open-source it to everyone. I am not going to maintain this control anymore. If you find any bug or idea to implement, please help to improve if you loved it. I appreciate for the help.  
   
-![ScreenShot](https://raw.github.com/Seitk/InfiniteScrollPicker/master/screenshot0.png) &nbsp; ![ScreenShot](https://raw.github.com/Seitk/InfiniteScrollPicker/master/screenshot0.png)  
-  
+![ScreenShot](https://raw.github.com/Seitk/InfiniteScrollPicker/master/screenshot0.png)  
+
 Usage  
 setImageAry - Basically you init the InfiniteScrollPicker with frame, set image array for it and add it to your view then everything is working. 
 
@@ -30,5 +30,7 @@ InfiniteScrollPicker *isp3 = [[InfiniteScrollPicker alloc] initWithFrame:CGRectM
 [isp3 setPositionRatio:2];  
 [isp3 setAlphaOfobjs:0.8];  
 [self.view addSubview:isp3];  
-
-
+  
+  
+Contact Me  
+You can add me on Facebook - http://www.facebook.com/seitkk
