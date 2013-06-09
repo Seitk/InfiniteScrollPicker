@@ -58,7 +58,7 @@
     [self.view addSubview:isp3];
 }
 
-- (void)infiniteScrollPicker:(InfiniteScrollPicker *)infiniteScrollPicker didSelectAtIndex:(int)index
+- (void)infiniteScrollPicker:(InfiniteScrollPicker *)infiniteScrollPicker didSelectAtImage:(UIImage *)image
 {
     NSLog(@"selected");
 }

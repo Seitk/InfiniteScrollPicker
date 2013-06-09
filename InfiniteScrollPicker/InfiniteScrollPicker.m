@@ -206,7 +206,7 @@
         
         dispatch_async(dispatch_get_main_queue(), ^ {
             
-            SEL selector = @selector(infiniteScrollPicker:didSelectAtIndex:);
+            SEL selector = @selector(infiniteScrollPicker:didSelectAtImage:);
             if ([[self firstAvailableUIViewController] respondsToSelector:selector])
             {
                 #pragma clang diagnostic push
