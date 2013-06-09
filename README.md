@@ -2,6 +2,7 @@ InfiniteScrollPicker
 ====================
 
 InfiniteScrollPicker is a subclass of UIScrollView and providing infinite scrolling and size scaling for central items (refer to screenshot). This is a control that I wrote for Emodex (https://itunes.apple.com/app/emodex/id598162115?mt=8) and now I refactorred the code and open-source it to everyone. I am not going to maintain this control anymore. If you find any bug or idea to implement, please help to improve if you loved it. I appreciate for the help.  
+
   
 ![ScreenShot](https://raw.github.com/Seitk/InfiniteScrollPicker/master/screenshot0.png)  
 
@@ -17,6 +18,12 @@ setPositionRatio - I am not going to talk a lot on it, but bascially it affects 
   
 setHeightOffset - give offset to the scrolling items. It calculates from bottom to top.  
   
+  
+Item selection callback  
+I was decided to make a delegate for this control but I need to subscribe to UIScrollViewDelegate in the picker view. So it is not allowed to have another delegate. At the result, it perform a selector when item snapped. You should implement the method in the view controller. It gives you an UIImage then you could calculate the selected index from the image array you passed in.
+\- (void)infiniteScrollPicker:(InfiniteScrollPicker *)infiniteScrollPicker didSelectAtImage:(UIImage *)image  
+  
+    
 Example  
   
 InfiniteScrollPicker *isp = [[InfiniteScrollPicker alloc] initWithFrame:CGRectMake(0, 0, 320, 100)];  
