@@ -25,5 +25,6 @@
 @property (nonatomic) float positionRatio;
 
 - (void)initInfiniteScrollView;
+- (void)setSelectedItem:(int)index;
 
 @end

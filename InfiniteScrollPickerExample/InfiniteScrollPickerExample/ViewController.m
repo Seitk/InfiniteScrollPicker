@@ -41,6 +41,7 @@
     isp = [[InfiniteScrollPicker alloc] initWithFrame:CGRectMake(0, 0, 320, 100)];
     [isp setItemSize:CGSizeMake(50, 50)];
     [isp setImageAry:set1];
+    [isp setSelectedItem:5];
     [self.view addSubview:isp];
     
     isp2 = [[InfiniteScrollPicker alloc] initWithFrame:CGRectMake(0, 110, 320, 120)];
@@ -48,6 +49,7 @@
     [isp2 setHeightOffset:30.0];
     [isp2 setPositionRatio:2.0];
     [isp2 setAlphaOfobjs:0.3];
+    [isp2 setSelectedItem:0];
     [self.view addSubview:isp2];
 
     isp3 = [[InfiniteScrollPicker alloc] initWithFrame:CGRectMake(0, 240, 320, 210)];

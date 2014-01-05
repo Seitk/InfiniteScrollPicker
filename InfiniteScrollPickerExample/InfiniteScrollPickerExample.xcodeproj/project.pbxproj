@@ -57,6 +57,8 @@
 		9BB436481760D38C00102EF4 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BB436471760D38C00102EF4 /* ViewController.m */; };
 		9BB4364B1760D38C00102EF4 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9BB436491760D38C00102EF4 /* ViewController.xib */; };
 		9BB436541760D3C200102EF4 /* InfiniteScrollPicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BB436531760D3C200102EF4 /* InfiniteScrollPicker.m */; };
+		9BCF8DC51770AE4900A283C4 /* appicon.png in Resources */ = {isa = PBXBuildFile; fileRef = 9BCF8DC41770AE4900A283C4 /* appicon.png */; };
+		9BCF8DC71770AE4B00A283C4 /* appicon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9BCF8DC61770AE4B00A283C4 /* appicon@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -117,6 +119,8 @@
 		9BB4364A1760D38C00102EF4 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController.xib; sourceTree = "<group>"; };
 		9BB436521760D3C200102EF4 /* InfiniteScrollPicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InfiniteScrollPicker.h; sourceTree = "<group>"; };
 		9BB436531760D3C200102EF4 /* InfiniteScrollPicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InfiniteScrollPicker.m; sourceTree = "<group>"; };
+		9BCF8DC41770AE4900A283C4 /* appicon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = appicon.png; sourceTree = "<group>"; };
+		9BCF8DC61770AE4B00A283C4 /* appicon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "appicon@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -194,6 +198,8 @@
 		9BB436221760D38C00102EF4 = {
 			isa = PBXGroup;
 			children = (
+				9BCF8DC61770AE4B00A283C4 /* appicon@2x.png */,
+				9BCF8DC41770AE4900A283C4 /* appicon.png */,
 				9BB436511760D3A700102EF4 /* InfiniteScrollPicker */,
 				9BB436341760D38C00102EF4 /* InfiniteScrollPickerExample */,
 				9BB4362D1760D38C00102EF4 /* Frameworks */,
@@ -363,6 +369,8 @@
 				9B87EE2F1764218C00001F9F /* s3_8.jpeg in Resources */,
 				9B87EE301764218C00001F9F /* s3_9.jpeg in Resources */,
 				9B87EE321764297C00001F9F /* s3_bg.jpg in Resources */,
+				9BCF8DC51770AE4900A283C4 /* appicon.png in Resources */,
+				9BCF8DC71770AE4B00A283C4 /* appicon@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

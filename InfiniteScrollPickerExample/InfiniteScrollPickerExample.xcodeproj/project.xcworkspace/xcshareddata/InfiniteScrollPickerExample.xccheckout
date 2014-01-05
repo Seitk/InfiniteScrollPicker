@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>BE5E142A-28E1-43A7-B01A-F598C83CE671</string>
+	<key>IDESourceControlProjectName</key>
+	<string>InfiniteScrollPickerExample</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>A4B531D7-7A62-4CA6-AB61-426035F2F39A</key>
+		<string>https://github.com/Seitk/InfiniteScrollPicker.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>InfiniteScrollPickerExample/InfiniteScrollPickerExample.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>A4B531D7-7A62-4CA6-AB61-426035F2F39A</key>
+		<string>../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/Seitk/InfiniteScrollPicker.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>A4B531D7-7A62-4CA6-AB61-426035F2F39A</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>A4B531D7-7A62-4CA6-AB61-426035F2F39A</string>
+			<key>IDESourceControlWCCName</key>
+			<string>InfiniteScrollPicker</string>
+		</dict>
+	</array>
+</dict>
+</plist>

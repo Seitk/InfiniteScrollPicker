@@ -35,6 +35,11 @@
 
 - (void)initInfiniteScrollView
 {
+    [self initInfiniteScrollViewWithSelectedItem:0];
+}
+
+- (void)initInfiniteScrollViewWithSelectedItem:(int)index
+{
     if (_itemSize.width == 0 && _itemSize.height == 0) {
         if (_imageAry.count > 0) _itemSize = [(UIImage *)[_imageAry objectAtIndex:0] size];
         else _itemSize = CGSizeMake(self.frame.size.height/2, self.frame.size.height/2);
@@ -61,14 +66,14 @@
         
         self.contentSize = CGSizeMake(_imageAry.count * 5 * _itemSize.width, self.frame.size.height);
         
-        float viewMiddle = _imageAry.count * 2 * _itemSize.width;
+        float viewMiddle = _imageAry.count * 2 * _itemSize.width - self.frame.size.width/2 + _itemSize.width + (_itemSize.width * index);
         [self setContentOffset:CGPointMake(viewMiddle, 0)];
         
         self.delegate = self;
         
         dispatch_queue_t queue = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0);
         dispatch_async(queue, ^ {
-            [self reloadView:viewMiddle-10];
+            [self reloadView:viewMiddle];
             dispatch_async(dispatch_get_main_queue(), ^ {
                 [self snapToAnEmotion];
             });
@@ -88,6 +93,11 @@
 {
     itemSize = itemSize;
     [self initInfiniteScrollView];
+}
+
+- (void)setSelectedItem:(int)index
+{
+    [self initInfiniteScrollViewWithSelectedItem:index];
 }
 
 - (void)layoutSubviews {
@@ -132,7 +142,7 @@
             float tOffset = (view.center.x - offset) - self.frame.size.width/4;
             
             if (tOffset < 0 || tOffset > self.frame.size.width) tOffset = 0;
-            float addHeight = (-1 * fabsf((tOffset)*2 - self.frame.size.width/2) + self.frame.size.width/2)/4;
+            float addHeight = [self calculateFrameHeightByOffset:tOffset];
             
             if (addHeight < 0) addHeight = 0;
             
@@ -169,6 +179,11 @@
     }
 
     [(UIView *)biggestView setAlpha:1.0];
+}
+
+-(float)calculateFrameHeightByOffset:(float)offset
+{
+    return (-1 * fabsf((offset)*2 - self.frame.size.width/2) + self.frame.size.width/2)/4;
 }
 
 - (void)snapToAnEmotion
